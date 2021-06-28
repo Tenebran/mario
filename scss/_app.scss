@@ -1,0 +1,108 @@
+.app {
+  height: 937px;
+  font-family: $Roboto-Font;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 80px 10px 0;
+  background: $background-color;
+  cursor: url("../img/icon/cursor1.png"), pointer;
+
+  &__playground {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    width: 1000px;
+    height: 800px;
+    border: $border-size solid $playgroundBorder-color;
+    border-radius: $border-size;
+    background: url(../img/img-background/supermario_aed8694712412625.jpg) center/cover;
+    margin: 0 0 60px;
+    overflow: hidden;
+
+    &__mario {
+      position: absolute;
+      justify-content: center;
+      width: 100px;
+      height: 100px;
+      border: $border-size solid $text-color;
+      border-radius: $border-size;
+      background: url(../img/icon/New_Super_Mario_Bros_U_Deluxe.png) no-repeat center / contain;
+      transition: 0.1s;
+      cursor: url("../img/icon/cursor2.png"), pointer;
+
+      &:focus {
+        outline: 2px solid $outline-color;
+        outline-offset: -7px;
+      }
+    }
+  }
+
+  &__info {
+    margin: 0 10px 0 0;
+    font-size: $mainFontSize;
+    color: $text-color;
+    text-shadow: 2px 2px 2px $textShadow-color;
+
+    &__controll {
+      display: inline-flex;
+      text-align: center;
+      font-size: $titleFontSize;
+      padding: 0 0 50px;
+      color: $title-color;
+    }
+
+    &__mario {
+      @include text-logo_list;
+    }
+
+    &__arrows {
+      @include text-logo_list;
+    }
+
+    &__ctrl {
+      @include text-logo_list;
+    }
+
+    &__spacebar {
+      @include text-logo_list;
+    }
+
+    &__logo1 {
+      @include logo-stye;
+      background: url(../img/icon/gamepad_PNG67.png) center/contain;
+      background-repeat: no-repeat;
+    }
+
+    &__logo2 {
+      @include logo-stye;
+      background: url(../img/icon/New_Super_Mario_Bros_U_Deluxe.png) center/contain;
+      background-repeat: no-repeat;
+    }
+
+    &__logo3 {
+      @include logo-stye;
+      background: url(../img/icon/arrows.png) center/cover;
+      background-repeat: no-repeat;
+    }
+
+    &__logo4 {
+      @include logo-stye;
+      background: url(../img/icon/ctrl.png) center/cover;
+      background-repeat: no-repeat;
+    }
+
+    &__logo5 {
+      @include logo-stye;
+      background: url(../img/icon/spacebar-icon-25.jpg) center/contain;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.mario__background__left {
+  background: url(../img/icon/mario_left.png) cover/center;
+  background-repeat: no-repeat;
+}

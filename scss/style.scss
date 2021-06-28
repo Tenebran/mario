@@ -1,0 +1,15 @@
+@import "./reset";
+@import "./vars";
+@import "./app";
+
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../font/RobotoSlab-Bold.woff2") format("woff2"),
+    url("../font/RobotoSlab-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

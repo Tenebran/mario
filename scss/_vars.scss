@@ -1,0 +1,33 @@
+// Font
+$Roboto-Font: "Roboto Slab";
+
+// Size
+$mainFontSize: 30px;
+$titleFontSize: 35px;
+$border-size: 5px;
+
+// Main color
+$text-color: rgb(248, 120, 0);
+$title-color: rgba(253, 29, 29, 1);
+$outline-color: rgb(94, 255, 0);
+$playgroundBorder-color: rgb(2, 123, 204);
+$textShadow-color: black;
+$background-color: linear-gradient(
+  90deg,
+  rgba(131, 58, 180, 1) 0%,
+  rgba(253, 29, 29, 1) 50%,
+  rgba(252, 176, 69, 1) 100%
+);
+
+// mixin
+@mixin text-logo_list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 40px;
+}
+
+@mixin logo-stye {
+  min-width: 50px;
+  min-height: 50px;
+  margin: 0 0 0 15px;
+}
