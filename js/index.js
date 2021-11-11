@@ -59,11 +59,11 @@ window.addEventListener('load', function () {
       }
     }
 
-    // Left fix
+    // Left
     if (event.keyCode == 37) {
       event.target.style.left = leftKey - 20 + 'px';
       event.target.style.borderLeft = borderBlue;
-      event.target.style.background = `url(./img/icon/mario_left.png) no-repeat center / contain`;
+      event.target.style.background = `url(./img/icon/Mario_left.png) no-repeat center / contain`;
     }
 
     //right
